@@ -10,7 +10,7 @@ include 'header.php';
 		<section class="demo_banner text-center">
 			<div class="container">
 				<img src="assets/img/basic/logo_home.png" alt="Logo SAMlisten.com"/>
-		    <p>Hemos creado una radio diferentepos2689SofíaCodePhp1_3, una radio donde solamente escucharás música.</p>
+		    <p>Hemos creado una radio diferentepos2689SofíaCodePhp1_4, una radio donde solamente escucharás música.</p>
 		  </div>
 		</section>
 		<div class=" container">
