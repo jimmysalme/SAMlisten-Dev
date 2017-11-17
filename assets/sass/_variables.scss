@@ -1,0 +1,70 @@
+// Variables
+// -----------------------------------------------------------------------------
+
+// Brand colors
+// -----------------------------------------------------------------------------
+$rojo:                  #D41010 !default;
+$brand-success:         #5cb85c !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+$brand-info:            #5bc0de !default;
+
+// Ramq
+// -----------------------------------------------------------------------------
+// Colors
+$blanco:                #FFFFFF !default;
+$gris-bg:               #202020;
+$gris-claro:            #6b6a6a !default;
+$gris-oscuro:           #202020 !default;
+$negro:                 #000000;
+$rojo:                  #D41010 !default;
+
+
+// Links
+// -----------------------------------------------------------------------------
+
+
+// Typography
+// -----------------------------------------------------------------------------
+
+$font-family-sans-serif:  "oswald", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-family-p:           "lato", Helvetica, Arial, sans-serif !default; //Párrafos
+
+$font-size-base:          20pt !default;
+// $font-size-large:         $font-size-base*1.4 !default;
+$font-size-small:         0.8em !default;
+// $font-size-breadcrumb:    1.1em !default;
+
+// $font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
+// $font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
+// $font-size-h3:            ceil($font-size-base * 1.7) !default; // ~24px
+// $font-size-h4:            ceil($font-size-base * 1.5) !default; // ~18px
+// $font-size-h5:            $font-size-base !default;
+// $font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+//
+// $line-height-base:        1.428571429 !default; // 20/14
+// $line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+//
+// $headings-font-family:    $font-family-base !default;
+// $headings-font-weight:    500 !default;
+// $headings-line-height:    1.1 !default;
+// $headings-color:          inherit !default;
+
+
+// Iconography
+
+
+
+// Icônes Font Awsome
+// -----------------------------------------------------------------------------
+// $icons: (
+//     fa-lightbulb-o: "\f0eb",
+//     fa-address-book: "\f2b9",
+//     fa-external-link: "\f08e",
+//     fa-cogs: "\f085",
+//     fa-plus-square: "\f0fe",
+//     fa-wrench: "\f0ad",
+//     fa-exclamation-triangle: "\f071"
+// );

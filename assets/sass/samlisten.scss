@@ -1,0 +1,319 @@
+@import "variables";
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, 
+body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+    &.body_home{
+        color: white;
+        .demo_banner{
+            img{
+                margin-bottom: 40px;
+            }
+        }
+    }
+    #body-wrap{
+        min-height: 100%;
+        /* equal to footer height */
+        margin-bottom: -40px;  
+        &:after {
+            content: "";
+            display: block;
+            height: 40px; 
+        }  
+    }
+}
+
+footer {
+    color: $blanco;
+    height: 40px; 
+    padding: 0.5rem 1rem;
+    background-color: $negro;
+    text-align: right;
+    border-top: 1px solid $rojo;
+    font-size: $font-size-small;
+    a{
+        &:hover{
+            color: $rojo;
+        }
+    }
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+	display:table-cell;
+    position:relative;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.not-fullscreen {
+    height:50%;
+}
+
+#barra-player{
+    z-index: 2;
+}
+
+header{
+    z-index: 1;
+}
+
+
+#barra-player {
+    &.fixed{
+        position:fixed;
+        top: 0;
+    }
+}
+
+#letra {
+	text-align:center;
+	height:480px;
+    overflow-y:hidden;
+    
+    
+}
+
+.panner {
+	display: block;
+    position: absolute;
+	right: 50%;
+	cursor:pointer;
+}
+
+#panTop {
+	top:0;
+}
+
+#panBottom {
+	bottom:-50px;
+}
+
+.flecha_activa {
+	color:$rojo;	
+}
+
+.fa_grande {
+    margin-bottom: 25px;
+    a {
+        padding:0 25px;
+    }
+    .fa {
+        font-size:40px;
+        color:$rojo;
+    }
+}
+
+
+
+#pub01 {
+	margin: 40px 0px;
+}
+
+.pub300 {
+	width:300px; 
+	margin:auto;
+}
+
+.tit_pub{
+	font-size:12px;
+}
+
+.track_info {
+	width: 100%;
+}
+
+.media_widget h6 {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+#tab1 {
+	background: #fff;
+    padding-top: 0;
+    margin-top: 125px;
+    border: 2px solid $rojo;
+}
+
+#form_val,
+#form_val_v_1, 
+#form_val_v_2,
+#cnt_fb_ded,
+#cnt_mail_ded {
+	display:none;
+}
+
+.div_video_container{
+	max-width:560px;
+	max-height:315px;
+	margin:0 auto;
+}
+
+.div_iframe_video {
+}
+
+.div_video {
+	text-align:center;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.div_video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.item_dedicala {
+    display: inline-block;
+}
+
+.item_dedicala > i {
+    font-size: 50px;
+    cursor: pointer;
+	margin: 0 15px;
+}
+
+.cnt_ded {
+    margin-top: 20px;
+}
+
+.form_buscar {
+	display: table;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000000;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    input[type="text"] {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.15);
+        margin-right: 10px;
+        display: inline-block;
+        padding-left: 10px;
+        float: left;
+        font-weight: 300;
+    }
+}
+
+
+.box_buscar, .btn_buscar {
+    padding: 0 5px;
+	height:40px;
+}
+
+.box_buscar {
+	width: 75%;
+	font-size: 20px;
+}
+
+.btn_buscar {
+	width: 20%;
+	font-size: 15px;
+    background: #cc1313;
+    border: none;
+    &:hover {
+        background: #222222; 
+    }
+}
+
+
+#fuente_biografia {
+	text-align:right;
+	font-size:10px;
+}
+
+.cn_hover_list:hover {
+	color:$rojo;
+}
+
+.pagination {
+	display: block;
+    text-align: center;
+    background-color: $rojo;
+    color: #FFF;
+	border: 5px solid $rojo;
+}
+
+span.current {
+    color:#000;
+}
+
+.page-numbers, span.current {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a.page-numbers:hover, a.page-numbers:active {
+    color: #000;
+}
+
+a.page-numbers:nth-child(n+2), span.current:nth-child(n+2) {
+    border-left: 1px solid #FFF;
+}
+
+.demos_links{
+    text-align:center;
+    li{
+        display: inline-block;
+        margin: 15px;
+        a{
+            span,
+            &:hover{
+                color: $rojo;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px){
+    a.ScrollTo {
+        display: block;
+    }
+}
+
+
+@media (min-width: 992px) {
+    /*******JIMSA*******/
+    #img_letra {
+        margin-top:30px;
+    }
+    
+    #btn_fb_ded_mobile{
+        display:none;	
+    }
+}
